@@ -1,0 +1,232 @@
+html{
+  /*Restablecer valores*/
+  box-sizing:border-box;
+  /* font-family:"SourceSansPro,Helvetica,sans-serif";   */
+  /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+}
+*,
+
+*:before,
+*:after{
+  box-sizing: border-box;
+  margin:0px;
+  padding: 0px;
+} 
+
+
+:root {
+  --primary-color: #06BC49;
+  --secondary-color: #D70F79;
+  --bg:#111111;
+}
+
+body{
+  background-color: var(--bg);
+    /* font-family: "Manrope", serif; */
+    font-family: "Nunito", serif;
+    color: white;
+ 
+}
+
+.title{
+  color: white;
+}
+
+.navbar{
+  width: 85%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  padding: 1.2rem;
+}
+
+.title{
+  padding-left: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1px;
+}
+
+.title h2{
+  color: #06BC49;
+}
+
+.title span{
+  font-weight: 500;
+  font-size: 25px;
+}
+
+nav{
+  color: white;
+  padding-right: 2rem;
+}
+
+nav ul{
+  display: flex ;
+  list-style: none;
+}
+
+
+nav ul li a{
+  text-decoration: none;
+  color: white;
+  margin-right: 1.5rem;
+  font-weight: 700;
+}
+
+.personal-info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+  width: 80%;
+  margin: 3rem auto ;
+}
+
+.circle{
+  width: 150px;
+  height: 150px;
+}
+
+.circle img{
+  width: 100%;
+  border-radius: 50%;
+}
+
+h1{
+  font-size: 40px;
+  color: white;
+  padding-top: 1rem;
+}
+
+.personal-info h2{
+  color: white;
+  margin-top: 1rem;
+  font-size: 30px;
+  color: #06BC49;
+
+}
+
+
+.personal-info p span{ 
+  color:var(--secondary-color);
+  font-size: 25px;
+}
+
+.personal-info p{
+  color: white;
+  font-size: 25px;
+  font-weight: 700;
+  padding-top: 2rem;
+}
+
+.header-bottom{
+  padding-top: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.header-bottom .icons{
+  margin-left: 1rem;
+}
+
+.header-bottom .icons img{
+  margin-left: 1rem;
+}
+
+.header-bottom img{
+  width: 50px;
+}
+
+.buttons button{
+  padding: 0.5rem 0.9rem;
+  border-radius: 5px;
+  background-color: white;
+  color: var(--bg);
+  font-weight: 600;
+  font-size: 17px;
+  font-family: "Manrope", serif;
+  font-family: "Nunito", serif;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+.buttons button:hover{
+  background-color: #e3e2e2;;
+}
+
+.icons a img {
+  transition: filter 0.3s ease-in-out;
+}
+
+.icons a:hover img {
+  filter: brightness(1.2); /* Hace la imagen un poco más brillante */
+}
+
+.skill-section{
+  padding-top: 2rem;
+}
+
+.title-section{
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.section{
+  width: 80%;
+  margin: auto;
+  padding-top: 3rem;
+}
+
+.skill{
+  padding: 1rem;
+  background-color: #2B2B2B;
+  display: flex;
+  border-radius: 5px;
+}
+
+.skill img{
+  margin-right: 1rem;
+  width: 40px;
+  height: 40px;
+  transition: filter 0.3s ease-in-out;
+}
+
+.skill img:hover{
+  filter: brightness(1.2);
+}
+
+.skill-list{
+  padding-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 1rem;
+}
+
+.skill-info h5{
+  padding-bottom: 5px;
+  font-size: 17px;
+}
+
+.skill-info p{
+  color: #c4c3c3;
+  color: rgb(134, 142, 150);
+  font-weight: 600;
+}
+
+.proyects-list{
+  padding-top: 3rem;
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-gap: 25px;
+  gap: 25px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.proyect{
+
+  background-color: #2B2B2B;
+}
