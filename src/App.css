@@ -120,6 +120,7 @@ h1{
   font-size: 25px;
   font-weight: 700;
   padding-top: 2rem;
+  text-align: center;
 }
 
 .header-bottom{
@@ -140,21 +141,32 @@ h1{
   width: 50px;
 }
 
-.buttons button{
+.buttons{display: flex;}
+
+.buttons a{
   padding: 0.5rem 0.9rem;
   border-radius: 5px;
   background-color: white;
   color: var(--bg);
   font-weight: 600;
   font-size: 17px;
-  font-family: "Manrope", serif;
   font-family: "Nunito", serif;
   margin-right: 0.5rem;
   cursor: pointer;
+  text-decoration: none;
+  display: flex
+;
+  align-items: center;
+  width: fit-content;
+  gap: 5px;
 }
 
-.buttons button:hover{
-  background-color: #e3e2e2;;
+.buttons a img{
+  width: 20px;
+}
+
+.buttons a:hover{
+  background-color: #e3e2e2;
 }
 
 .icons a img {
@@ -216,17 +228,417 @@ h1{
   font-weight: 600;
 }
 
-.proyects-list{
-  padding-top: 3rem;
-  width: 80%;
-  margin: auto;
-  display: grid;
-  grid-gap: 25px;
+.proyect-list{
+  padding-top: 2rem;
   gap: 25px;
-  grid-template-columns: repeat(3, 1fr);
+  display: grid;
+  grid-template-columns: repeat(3, minmax(250px,1fr));
 }
+
+
+
 
 .proyect{
-
   background-color: #2B2B2B;
+  border-radius: 8px;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
+
+.proyect-img img{
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+
+}
+
+.proyect-info{
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.proyect-info-top p{
+  padding-top: 0.5rem;
+}
+
+.proyect-info-top h4{
+  color: var(--primary-color);
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.proyect-info-buttons{
+  margin-top: 1rem;
+  display: flex;
+}
+
+.proyect-info-buttons a{
+  padding: 5px 10px;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  background-color: var(--primary-color);
+  color: white;
+  margin-right: 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+}
+
+.proyect-info-buttons a.bordered{
+  
+  background-color:var(--bg);
+  border: 2px solid var(--primary-color);
+}
+
+.proyect-info-buttons a img{
+  width: 22px;
+  margin-right:6px;
+}
+
+.proyect-spans{
+  padding-top: 0.3rem;
+  display: flex;
+  gap: 10px;
+}
+
+.proyect-spans span{
+  display: flex;
+  border-radius: 12px;
+  padding:3px 10px;
+  border: 1px solid rgba(255,255,255,0.2);
+  align-items: center;
+  width: fit-content;
+}
+
+.proyect-spans span p{
+  padding: 0;
+  font-size: 14px;
+}
+
+.proyect-spans span img{
+  width: 15px;
+  height: 15px;
+margin-right: 5px;
+}
+
+
+.circle-title{
+  width: 35px;
+  height: 35px;
+  min-height: 35px;
+  min-width: 35px;
+  background-color: white;
+  background-color: #2B2B2B;
+  border-radius: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-right: 10px;
+  margin-bottom: 10px;
+
+}
+
+.experience-subtitle{
+  display: flex;
+}
+
+.circle-title img{
+  width: 100%;
+  /* width: 10px; */
+  padding: 10px;
+}
+
+.experience-list{
+  padding-top: 1rem;
+}
+
+.experience-title h4{
+  font-weight: 800;
+  padding-bottom: 0.2rem;
+}
+
+.experience-info > span{
+  color: rgb(134, 142, 150);
+  font-weight: 700;
+}
+
+.experience-description{
+  padding-top: 0.2rem;  
+}
+
+.experience{
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2rem;
+}
+
+.contact-section{
+  text-align: center;
+  padding:7rem 0;
+}
+
+.contact-section h2{
+  padding-bottom: 1rem;
+  font-size: 40px;
+}
+
+.contact-section p{
+  font-size: 20px;
+}
+
+.contact-section p span{
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.contact-buttons{
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-buttons a{
+  padding: 0.5rem 0.9rem;
+    border-radius: 5px;
+    background-color: white;
+    color: var(--bg);
+    font-weight: 600;
+    font-size: 17px;
+    font-family: "Nunito", serif;
+    margin-right: 0.5rem;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    gap: 5px;
+  }
+
+.contact-buttons a img{
+  width: 20px;
+}
+
+@media (max-width: 1350px) {
+
+
+  .third-tag{
+    display: none !important;
+  }
+}
+
+
+@media (max-width: 1200px) {
+  .skill-list{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+}
+
+@media (max-width: 1000px) {
+
+  .proyect-list{
+    grid-template-columns:repeat(2, minmax(250px,1fr));
+  }
+  
+  .contact-section h2 {
+    font-size: 35px;
+}
+
+h1{
+  font-size: 35px;
+}
+
+.personal-info h2{
+  font-size: 28px;
+}
+
+.personal-info p{
+  font-size: 22px;
+}
+
+.personal-info p span {
+  font-size: 22px;
+}
+
+}
+
+
+
+@media (max-width: 700px) {
+
+  .section{
+    width: 90%;
+  }
+
+  .title-section {
+    font-size: 30px;
+  }
+
+  .skill{
+    align-items: center;
+  }
+
+  .skill-info p{
+    display: none;
+  }
+
+  .skill-info h5{
+    font-size: 14px;
+  }
+
+  .contact-section h2 {
+    font-size: 30px;
+}
+
+.contact-buttons{
+  flex-wrap: wrap;
+}
+
+.contact-section p{
+  font-size: 18px;
+}
+
+
+
+h1{
+  font-size: 32px;
+}
+
+.personal-info h2{
+  font-size: 25px;
+}
+
+.personal-info p{
+  font-size: 19px;
+}
+
+.personal-info p span {
+  font-size: 19px;
+}
+
+
+.header-bottom{
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+.navbar{
+  width: 90%;
+}
+
+nav{
+  padding-right: 0;
+}
+
+
+.title{
+  padding-left: 0;
+}
+
+.personal-info{
+  width: 90%;
+}
+
+  
+}
+
+
+
+@media (max-width: 600px) {
+  .proyect-list{
+    grid-template-columns:repeat(1, minmax(250px,1fr));
+  }
+
+  
+  .third-tag{
+    display: flex !important;
+  }
+}
+
+@media (max-width: 530px) {
+  .e-tag{
+    display: none;
+  }
+
+  .contact-buttons{
+    gap: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+
+  .title-section {
+    font-size: 28px;
+  }
+
+  .contact-section h2 {
+    font-size: 28px;
+}
+
+.contact-section p{
+  font-size: 16px;
+}
+
+h1{
+  font-size: 30px;
+  text-align: center;
+}
+
+.personal-info h2{
+  font-size: 23px;
+}
+
+.personal-info p{
+  font-size: 18px;
+}
+.personal-info p span {
+  font-size: 18px;
+}
+
+
+.buttons{
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-bottom .icons{
+  margin: 0;
+  gap: 10px;
+  display: flex;
+}
+
+.header-bottom .icons img{
+  margin: 0;
+}
+
+.personal-info{
+  margin: 2rem auto;
+}
+
+
+
+
+}
+
+@media (max-width: 450px) {
+  .me-tag{
+    display: none;
+  }
+
+  nav ul li a{
+    margin-right: 0;
+    font-weight: 800;
+    font-size: 17px;
+  }
+}
+

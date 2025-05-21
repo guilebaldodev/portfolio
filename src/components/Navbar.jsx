@@ -12,14 +12,14 @@ const Navbar = () => {
 
         <nav>
             <ul>
-                <li>
-                    <a href="">Experiencia</a>
+                <li className="e-tag">
+                    <a href="#experience">Experiencia</a>
+                </li>
+                <li className="me-tag">
+                    <a href="#skills">Habilidades</a>
                 </li>
                 <li>
-                    <a href="">Sobre Mi</a>
-                </li>
-                <li>
-                    <a href="">Proyectos</a>
+                    <a href="#proyects">Proyectos</a>
                 </li>
             </ul>
         </nav>
