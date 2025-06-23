@@ -352,7 +352,7 @@ function App() {
 
                 <a
                   className="bordered"
-                  href="https://github.com/guilebaldodev/ToroShow"
+                  href="https://torosmxdemo.vercel.app/"
                   target="_blank"
                 >
                   <img src="/icons/external-link.png"></img>
