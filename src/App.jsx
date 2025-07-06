@@ -261,6 +261,61 @@ function App() {
             </div>
           </div>
 
+                    <div className="proyect">
+            <div className="proyect-img">
+              <img src="/portfolio/floresmx.png" alt="" />
+            </div>
+
+            <div className="proyect-info">
+              <div className="proyect-info-top">
+                <h4>Flores Mx</h4>
+
+                <div className="proyect-spans">
+                  <span>
+                    <img src="/icons/skills/nextjs.png"></img>
+                    <p>Next.js</p>
+                  </span>
+
+                  <span>
+                    <img src="/icons/skills/mongodb.png"></img>
+                    <p>MongoDB</p>
+                  </span>
+
+                  <span className="third-tag">
+                    <img src="/icons/skills/css.png"></img>
+                    <p>CSS</p>
+                  </span>
+                </div>
+
+                <p>
+
+                  Flores MX es una tienda en línea con catálogo de arreglos florales y un panel de control para su gestión. 
+                </p>
+              </div>
+              <div className="proyect-info-buttons">
+                <a
+                  href="https://github.com/guilebaldodev/floresmx"
+                  target="_blank"
+                >
+                  <img src="/icons/github-white.png"></img>
+                  GITHUB
+                </a>
+
+                <a
+                  className="bordered"
+                  href="https://www.justiciayprogresismo.com"
+                  target="_blank"
+                >
+                  <img src="/icons/external-link.png"></img>
+                  DEMO
+                </a>
+              </div>
+            </div>
+          </div>
+
+
+
+
           <div className="proyect">
             <div className="proyect-img">
               <img src="/portfolio/lawyer_web.png" alt="" />
