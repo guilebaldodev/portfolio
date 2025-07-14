@@ -200,14 +200,14 @@ function App() {
                 </p>
               </div>
               <div className="proyect-info-buttons">
-                <a
+                {/* <a
                   className="bordered"
                   href="https://toro-salgado.vercel.app"
                   target="_blank"
                 >
                   <img src="/icons/external-link.png"></img>
                   LINK
-                </a>
+                </a> */}
               </div>
             </div>
           </div>
@@ -303,7 +303,7 @@ function App() {
 
                 <a
                   className="bordered"
-                  href="https://www.justiciayprogresismo.com"
+                  href="https://floresmxdemo.vercel.app"
                   target="_blank"
                 >
                   <img src="/icons/external-link.png"></img>
